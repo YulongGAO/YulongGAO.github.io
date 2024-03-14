@@ -34,35 +34,23 @@
             left: 0;
             right: 0;
         }
-        section {
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            max-width: 800px;
+        .container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 120px; /* Adjust top margin to align with header */
+            margin-bottom: 20px; /* Adjust bottom margin to avoid overlapping with footer */
         }
-        h1, h2 {
-            color: #343a40;
+        .profile {
+            flex-basis: 30%; /* Adjust width of left column */
+            padding-right: 20px; /* Add some padding to separate from right column */
         }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            margin-bottom: 15px;
-        }
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
+        .content {
+            flex-basis: 68%; /* Adjust width of right column */
         }
         .profile-img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
+            width: 255px;
+            height: 300px;
+            border-radius: 100%;
             margin-bottom: 20px;
         }
         .paper {
@@ -77,33 +65,39 @@
         <p class="mb-0">Postdoctoral Researcher</p>
         <p class="mb-0">School of Astronomy and Space Science, Nanjing University</p>
         <p class="mb-0">ORCID: <a href="https://orcid.org/0000-0002-5973-694X" target="_blank">0000-0002-5973-694X</a></p>
-        <img src="./yulong1.jpg" alt="Yulong GAO" class="profile-img">
     </header>
     <div class="container">
-        <section>
-            <h2 class="mb-4">Personal Information</h2>
-            <p><strong>Nationality:</strong> China</p>
-            <p><strong>Country:</strong> China</p>
-        </section>
-        <section>
-            <h2 class="mb-4">Employment</h2>
-            <p><strong>Nanjing University:</strong> Nanjing, Jiangsu, China</p>
-            <p><strong>January 2021 - Present</strong></p>
-            <p>Postdoctoral Researcher, Department of Astronomy</p>
-        </section>
-        <section>
-            <h2 class="mb-4">Education and Qualifications</h2>
-            <p><strong>PhD, University of Science and Technology of China:</strong> Hefei, Anhui, China</p>
-            <p><strong>September 2014 - December 2020</strong></p>
-            <p><strong>International Research Student, University of Tokyo:</strong> Tokyo, Japan</p>
-            <p><strong>September 2019 - August 2020</strong></p>
-            <p><strong>Bachelor of Science in Physics, Xiamen University:</strong> Xiamen, Fujian, China</p>
-            <p><strong>September 2010 - July 2014</strong></p>
-        </section>
-        <section>
-            <h2 class="mb-4">Publications</h2>
-            <ul>
-                <li class="paper">Gao, Y., Gu, Q., Zhou, P., Shi, Y., and Li, X. (2024). "Detection of Metal Enrichment by SN 2011jm in NGC 4809." <em>The Astrophysical Journal</em>, 962(2), IOP. <a href="https://doi.org/10.3847/2041-8213/ad23e3" target="_blank">doi:10.3847/2041-8213/ad23e3</a></li>
+        <div class="profile">
+            <img src="./Yulong_Luoyang.jpg" alt="Yulong GAO" class="profile-img">
+            <section>
+                <h2 class="mb-4">Employment</h2>
+                <p><strong>Nanjing University:</strong> Nanjing, Jiangsu, China</p>
+                <p><strong>January 2021 - Present</strong></p>
+                <p>Postdoctoral Researcher, Department of Astronomy</p>
+            </section>
+        </div>
+        <div class="content">
+            <section>
+                <h2 class="mb-4">Research Contents</h2> 
+                <p>As an astrophysics researcher, my work is focusing on galaxy formation, chemical enrichment, and interstellar dynamics. We have provided evidence of metal pollution driven by stellar feedback, offering insights into stellar processes' impact on the interstellar medium. We also explored how mergers trigger starbursts in dwarf galaxies despite metal-deficient environments, shedding light on their evolutionary pathways.</p>
+
+                <p>Furthermore, I've investigated the dynamics of ionized and molecular gases in galactic nuclei, revealing insights into phenomena like star formation and AGN feedback. My researches also delved into the mass-metallicity relation, uncovering complex relationships between galactic properties and chemical makeup. Through meticulous analysis, we shed light on how gas-phase metallicity, stellar mass density, and star formation rates intertwine to shape galaxy evolution.</p>
+
+                <p>Moving forward, I will try to pushing the boundaries of our understanding of the universe, driven by curiosity and a dedication to advancing astrophysics research.</p>
+            </section>
+            <section>
+                <h2 class="mb-4">Education and Qualifications</h2>
+                <p><strong>PhD, University of Science and Technology of China:</strong> Hefei, Anhui, China</p>
+                <p><strong>September 2014 - December 2020</strong></p>
+                <p><strong>International Research Student, University of Tokyo:</strong> Tokyo, Japan</p>
+                <p><strong>September 2019 - August 2020</strong></p>
+                <p><strong>Bachelor of Science in Physics, Xiamen University:</strong> Xiamen, Fujian, China</p>
+                <p><strong>September 2010 - July 2014</strong></p>
+            </section>
+            <section>
+                <h2 class="mb-4">Publications</h2>
+                <ul>
+              <li class="paper">Gao, Y., Gu, Q., Zhou, P., Shi, Y., and Li, X. (2024). "Detection of Metal Enrichment by SN 2011jm in NGC 4809." <em>The Astrophysical Journal</em>, 962(2), IOP. <a href="https://doi.org/10.3847/2041-8213/ad23e3" target="_blank">doi:10.3847/2041-8213/ad23e3</a></li>
                <li class="paper">Gao, Y. (2023). "Merger-induced star formation in the low-metallicity dwarf galaxy NGC 4809/4810." <em>Astronomy and Astrophysics</em>, 677. <a href="https://doi.org/10.1051/0004-6361/202346753" target="_blank">doi:10.1051/0004-6361/202346753</a></li>
                <li class="paper">Tang, Y. (2022). "Unveiling the formation of NGC 2915 with MUSE: A counter-rotating stellar disk embedded in a disordered gaseous environment." <em>Astronomy and Astrophysics</em>, 668. <a href="https://doi.org/10.1051/0004-6361/202243944" target="_blank">doi:10.1051/0004-6361/202243944</a></li>
                <li class="paper">Egusa, F., Gao, Y., Morokuma-Matsui, K., Liu, G., and Maeda, F. (2022). "CO Excitation and its Connection to Star Formation at 200 pc in NGC 1365." <em>The Astrophysical Journal</em>, 935(2), IOP. <a href="https://doi.org/10.3847/1538-4357/ac8050" target="_blank">doi:10.3847/1538-4357/ac8050</a></li>
@@ -125,13 +119,13 @@
                <li class="paper">Lin, Z. (2017). "Spectroscopic Observation and Analysis of H II Regions in M33 with MMT: Temperatures and Oxygen Abundances." <em>The Astrophysical Journal</em>, 842(2), IOP. <a href="https://doi.org/10.3847/1538-4357/aa6f14" target="_blank">doi:10.3847/1538-4357/aa6f14</a></li>
                <li class="paper">Gao, Y.-L. (2017). "A sample of metal-poor galaxies identified from the LAMOST spectral survey." <em>Research in Astronomy and Astrophysics</em>, 17(5), IOP. <a href="https://doi.org/10.1088/1674-4527/17/5/41" target="_blank">doi:10.1088/1674-4527/17/5/41</a></li>
                <li class="paper">Lian, J. H., Kong, X., Jiang, N., Yan, W., and Gao, Y. L. (2015). "Surface brightness profiles of blue compact dwarf galaxies in the GOODS-N and GOODS-S field." <em>Monthly Notices of the Royal Astronomical Society</em>, 451(1), OUP, pp. 1130–1140. <a href="https://doi.org/10.1093/mnras/stv1028" target="_blank">doi:10.1093/mnras/stv1028</a></li>
-
-            </ul>
-        </section>
+                    <!-- Add more papers here -->
+                </ul>
+            </section>
+        </div>
     </div>
     <footer>
         <p> 2024 Yulong GAO. All rights reserved.</p>
     </footer>
 </body>
 </html>
-
